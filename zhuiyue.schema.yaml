@@ -59,9 +59,9 @@ engine:
     - table_translator@custom_phrase_completion
     - table_translator@custom_phrase_no_completion
     - reverse_lookup_translator
-    - table_translator@ecdict
+    # - table_translator@ecdict
     - lua_translator@date_translator      # 时间、日期、星期
-    - table_translator@melt_eng           # 英文输入
+    # - table_translator@melt_eng           # 英文输入
     - lua_translator@unicode              # Unicode
   filters:
     - simplifier@emoji                  # Emoji
@@ -138,12 +138,7 @@ reduce_english_filter:
   # 降低到第 idx 个位置
   idx: 2
   # 要降低的单词，匹配的是输入码，即全小写。
-  words: [nav, 
-  rug, bus, ship, laos, bail, bam, bans, bib, bos, chic, chit, dab, dag,
-  dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug,
-  lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal,
-  sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum, fax, cain,
-  key, mob, buy, dam, wap]
+  words: [nav, rug, bus, ship, laos, bail, bam, bans, bib, bos, chic, chit, dab, dag, dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug, lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal, sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum, fax, cain, key, mob, buy, dam, wap]
 
 
 translator:
@@ -152,6 +147,10 @@ translator:
   enable_correction: false         # 电脑上不需要开启按键纠错
   preedit_format:
   enable_charset_filter: true
+  enable_user_dict: false
+  spelling_hints: 2
+  comment_format:
+    - xform/^[^[]+[[]// ## 单字编码提示只显示辅助码部分
 
 
 flypy_phrases:                     # 小鹤音形-短语，支持自动补全, 词库源自现代汉语词典
