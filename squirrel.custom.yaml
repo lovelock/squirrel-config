@@ -101,12 +101,12 @@ patch:
 
       name: 没信
       author: rexarski
-      font_face: 'LXGW WenKai' # 字体及大小
-      font_point: 18
-      label_font_face: 'LXGW WenKai' # 序号字体及大小
-      label_font_point: 12
-      comment_font_face: 'LXGW WenKai' # 注字体及大小
-      comment_font_point: 16
+      font_face: 'LXGWWenKaiGB Nerd Font' # 字体及大小
+      font_point: 20
+      label_font_face: 'LXGWWenKaiGB Nerd Font' # 序号字体及大小
+      label_font_point: 14
+      comment_font_face: 'LXGWWenKaiGB Nerd Font' # 注字体及大小
+      comment_font_point: 18
       candidate_list_layout: stacked # 候选项排列方向 stacked | linear
       text_orientation: horizontal # 文字排列方向 horizontal | vertical
       inline_preedit: true # 拼音位于： 候选框 false | 行内 true
@@ -140,12 +140,12 @@ patch:
     mechat_dark:
       name: 没信_黑
       author: rexarski
-      font_face: 'LXGW WenKai' # 字体及大小
-      font_point: 18
-      label_font_face: 'LXGW WenKai' # 序号字体及大小
-      label_font_point: 12
-      comment_font_face: 'LXGW WenKai' # 注字体及大小
-      comment_font_point: 16
+      font_face: 'LXGWWenKaiGB Nerd Font' # 字体及大小
+      font_point: 20
+      label_font_face: 'LXGWWenKaiGB Nerd Font' # 序号字体及大小
+      label_font_point: 14
+      comment_font_face: 'LXGWWenKaiGB Nerd Font' # 注字体及大小
+      comment_font_point: 18
       candidate_list_layout: stacked # 候选项排列方向 stacked | linear
       text_orientation: horizontal # 文字排列方向 horizontal | vertical
       inline_preedit: true # 拼音位于： 候选框 false | 行内 true
